@@ -9,13 +9,34 @@ namespace RPSLS
     class Player
     {
 
-        string playerChoice;
+        int playerChoice;
 
-        public Player(string playerChoice)
+        public Player()
         {
+            playerChoice = ChooseMove();
 
-            this.playerChoice = playerChoice;
+            switch(playerChoice)
+            {
 
+                case 1:
+                    Console.WriteLine($"Player has chosen Rock");
+                    break;
+                case 2:
+                    Console.WriteLine($"Player has chosen Paper");
+                    break;
+                case 3:
+                    Console.WriteLine($"Player has chosen Scissors");
+                    break;
+                case 4:
+                    Console.WriteLine($"Player has chosen Lizard");
+                    break;
+                case 5:
+                    Console.WriteLine($"Player has chosen Spock");
+                    break;
+                default:
+                    Console.WriteLine("Please make a valid choice");
+                    break;
+            }
         }
 
         public int ChooseMove()

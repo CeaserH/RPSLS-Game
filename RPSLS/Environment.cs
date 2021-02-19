@@ -8,5 +8,20 @@ namespace RPSLS
 {
     class Environment
     {
+
+        Player playerOne = new Player();
+        Player playerTwo = new Player();
+        AI ai = new AI();
+
+
+
+        public Environment()
+        {
+
+
+
+
+        }
+
     }
 }

@@ -11,7 +11,8 @@ namespace RPSLS
         static void Main(string[] args)
         {
 
-            
+            Player play = new Player();
+            play.ChooseMove();
 
 
         }
